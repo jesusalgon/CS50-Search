@@ -9,3 +9,6 @@ The project is developed with **HTML5** and **CSS3** written over **SASS**. To m
 
 ## License
 All the images and designs belogns to Google. This is a project with academic purposes, not commercial ones.
+
+## About me
+Want to contact me? You can visit my [LikedIn](https://www.linkedin.com/in/jesusalgon/) profile.
