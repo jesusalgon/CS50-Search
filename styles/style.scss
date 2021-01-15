@@ -1,0 +1,166 @@
+// General
+$nav-link-color: #212121;
+$nav-grey-color: #f1f1f1;
+$google-blue-color: #4385f4;
+$google-red-color: #ea4435;
+$lg-size: 991px;
+
+.nav-link {
+    color: $nav-link-color;
+    font-size: 0.85rem;
+
+    &:hover{
+        text-decoration: underline;
+        color: $nav-link-color;
+    }
+}
+
+*:focus {
+    outline: none;
+}
+
+
+// Search and Images
+.nav {
+    padding: 0 0.8rem;
+    align-items: center;
+} 
+
+.google-logo {
+    max-width: 17rem;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+#page {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100ch;
+
+    form {
+        margin: auto;
+        max-width: 37rem;
+        justify-content: space-evenly;
+    
+        .shadowed:hover{
+            box-shadow: 0 0 7px -3px rgb(110, 110, 110);
+        }
+    }
+}
+
+#searchbar {
+    width: 100%;
+    height: 2.8rem;
+    border-width: 1px;
+    border-color: lightgray;
+    border-radius: 100px;
+    border-style: solid;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1rem;
+
+    input {
+        width: 90%;
+        border-style: none;
+    }
+}
+
+#search-logo {
+    height: 1rem;
+    margin-right: 0.7rem;
+}
+
+#btn-row {
+    display: flex;
+    justify-content: center;
+
+    input[type=submit] {
+        height: 2.5rem;
+        width: 27%;
+        font-size: 0.9rem;
+        color: rgb(41, 41, 41);
+        border-style: none;
+        border-radius: 7px;
+        background-color: rgb(248, 248, 248);
+        margin: 0.5rem;
+    } 
+}
+
+// Avanced search
+.wide-nav {
+    justify-content: space-between;
+    height: 3.4rem;
+    background-color: $nav-grey-color;
+}
+
+.page-container {
+    padding-left: 2.6rem;
+}
+
+.google-logo-mini {
+    height: 2rem;
+}
+
+.underlined {
+    width: 100%;
+    height: 5rem;
+    padding-left: 2.6rem;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    display: flex;
+    align-items: center;
+
+    p {
+        font-size: 1.3rem;
+        color: $google-red-color;
+        margin: 0;
+    }
+    
+}
+
+#subtitle-find {
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+
+.advanced-form {
+    font-size: 0.82rem;
+
+    input[type=text] {
+        border-radius: 0px;
+        border-style: inset;
+        height: 1.7rem;
+    }
+
+    #advanced-btn {
+        margin-right: calc(100vw/12);
+
+        button {
+            background-color: $google-blue-color;
+    
+            &:hover {
+                background-color: #3d79e0;
+            }
+    
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+
+        @media screen and (min-width: $lg-size) {
+            margin-right: calc(100vw*4/12);
+        }
+    }
+
+    *:focus-within {
+        border-color: $google-blue-color;
+        outline: none;
+        box-shadow: none;
+    }
+} 
+
