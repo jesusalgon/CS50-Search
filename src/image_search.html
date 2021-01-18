@@ -15,15 +15,15 @@
             <a class="nav-link" href="../index.html">Google Search</a>
         </nav>
         
-        <div id=page>
-            <img src="../img/google-images.png" alt="google-images-logo" class="google-logo"/>
-            <form action="https://google.com/images" autocomplete="off">
-                <div id="searchbar" class="shadowed">
+        <div id=page class="d-flex flex-column align-items-center">
+            <img src="../img/google-images.png" alt="google-images-logo" class="google-logo col-5"/>
+            <form action="https://google.com/images" autocomplete="off" class="col-12 col-sm-10 d-flex flex-column align-items-center">
+                <div id="searchbar" class="shadowed col-12">
                     <img src="../img/search-logo.png" alt="search-logo" id="search-logo"/>
                     <input type="text" name="q">
                 </div>
-                <div id="btn-row">
-                    <input type="submit" value="Search Images" class="shadowed">
+                <div id="btn-row" class="btn-group col-8 d-flex align-items-center justify-content-center">
+                    <input type="submit" value="Search Images" class="shadowed col-6">
                 </div>
             </form>
         </div>
